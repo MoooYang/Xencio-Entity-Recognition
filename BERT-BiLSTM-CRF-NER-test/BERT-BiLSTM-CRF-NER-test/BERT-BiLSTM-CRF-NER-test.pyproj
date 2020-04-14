@@ -1,0 +1,146 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>a5ae47f0-5850-42ab-b0e5-dfcb8bdafaf4</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Run.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>BERT-BiLSTM-CRF-NER-test</Name>
+    <RootNamespace>BERT-BiLSTM-CRF-NER-test</RootNamespace>
+    <TestFramework>Pytest</TestFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="base\DataBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="base\Keyword.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="base\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\bert\create_pretraining_data.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\bert\extract_features.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\bert\modeling.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\bert\modeling_test.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\bert\optimization.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\bert\optimization_test.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\bert\run_classifier.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\bert\run_pretraining.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\bert\run_squad.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\bert\tokenization.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\bert\tokenization_test.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\bert\__init__.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\client\__init__.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\runs\__init__.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\server\graph.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\server\helper.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\server\http.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\server\zmq_decor.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\server\__init__.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\train\bert_lstm_ner.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\train\conlleval.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\train\lstm_crf_layer.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\train\models.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\train\tf_metrics.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\train\train_helper.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\train\__init__.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\bert_base\__init__.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\Config.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BERT_BiLSTM_CRF_master\starters\client_test.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\starters\data_process.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\starters\run.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\starters\setup.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\starters\terminal_predict.py" />
+    <Compile Include="BERT_BiLSTM_CRF_master\starters\thu_classification.py" />
+    <Compile Include="getCRFTrainData\DataWithExcel.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="getCRFTrainData\DataWithTxt.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="getCRFTrainData\CreateData.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="getCRFTrainData\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="公司名分类源数据获取.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="虚拟数据模型测试.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Train.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Server.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="模型调用.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="获取各种文件.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Run.py" />
+    <Compile Include="tools\CommonTools.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tools\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BERT_BiLSTM_CRF_master\" />
+    <Folder Include="BERT_BiLSTM_CRF_master\bert_base\" />
+    <Folder Include="BERT_BiLSTM_CRF_master\bert_base\bert\" />
+    <Folder Include="BERT_BiLSTM_CRF_master\bert_base\client\" />
+    <Folder Include="BERT_BiLSTM_CRF_master\bert_base\runs\" />
+    <Folder Include="BERT_BiLSTM_CRF_master\bert_base\server\" />
+    <Folder Include="BERT_BiLSTM_CRF_master\bert_base\train\" />
+    <Folder Include="BERT_BiLSTM_CRF_master\starters\" />
+    <Folder Include="getCRFTrainData\" />
+    <Folder Include="base\" />
+    <Folder Include="tools\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BERT_BiLSTM_CRF_master\bert_base\bert\CONTRIBUTING.md" />
+    <Content Include="BERT_BiLSTM_CRF_master\bert_base\bert\LICENSE" />
+    <Content Include="BERT_BiLSTM_CRF_master\bert_base\bert\multilingual.md" />
+    <Content Include="BERT_BiLSTM_CRF_master\bert_base\bert\README.md" />
+    <Content Include="BERT_BiLSTM_CRF_master\bert_base\bert\requirements.txt" />
+    <Content Include="BERT_BiLSTM_CRF_master\bert_base\bert\sample_text.txt" />
+    <Content Include="BERT_BiLSTM_CRF_master\bert_base\train\conlleval.pl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
